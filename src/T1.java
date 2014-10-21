@@ -5,7 +5,7 @@ import java.io.IOException;
 
 
 /**
- * @author Mathilde
+ * @author Mathilde Maltaire et Thibaud Avenier
  *
  */
 public class T1 {
@@ -15,7 +15,7 @@ public class T1 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
+		
 		String filePath = "src/dico.tsv";
 		 
 		try{
@@ -25,11 +25,11 @@ public class T1 {
 		BufferedReader buff = new BufferedReader(new FileReader(filePath));
 		 
 		try {
-		String line;
+		String ligne;
 		// Lecture du fichier ligne par ligne. Cette boucle se termine
 		// quand la méthode retourne la valeur null.
-		while ((line = buff.readLine()) != null) {
-				//System.out.println(line);
+		while ((ligne = buff.readLine()) != null) {
+			System.out.println(ligne);
 				//faites ici votre traitement
 		}
 		
